@@ -13,7 +13,6 @@
 **Podatkovne strukture in moduli v Pythonu** (torek, 8. maj, 2018)
 
 - Podatkovne strukture: objekt, slovar, množica
-- Uporaba modulov
 - Definiranje funkcij
 
 
@@ -27,5 +26,6 @@
 **Procesiranje bioloških podatkov v Pythonu** (sreda, 16. maj, 2018)
 
 - Priprava datotek FASTA, FASTQ, …
+- Uporaba modulov v Pythonu
 - Branje, procesiranje in zapisovanje datotek v Biopython
 - Osnovne analize zaporedij v Biopython
