@@ -44,3 +44,10 @@ da se nahajate v delovni mapi, lahko trenutno pot pridobite avtomatično. V Powe
 
     docker run -it --rm -p 8888:8888 -v ${pwd}:/home/jovyan/work jupyter/minimal-notebook
 
+### Povezave za vajo in poglabljanje
+
+- [Zbirka nalog](https://ucilnica.fri.uni-lj.si/mod/resource/view.php?id=7614). Po prvih predavanjih so primerne naloge iz prvih dveh poglavij. Po drugih bodo vse do rekurzije; s to se ne bomo ukvarjali, ker je ne boste potrebovali.
+
+- [Stran predmeta Programiranje 1 na FRI](https://ucilnica.fri.uni-lj.si/course/view.php?id=166). Na njej so obširnejši zapiski od teh tule (čeprav so, kot boste videli, v žlahti), predvsem pa so tam kupi in kupi nalog. Nekatere so v zbirki, veliko pa je dodatnih.
+
+Vse naloge spremljajo rešitve. Vendar jih ne glejte, dokler naloge sami ne rešite!
