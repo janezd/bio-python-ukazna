@@ -44,6 +44,29 @@ da se nahajate v delovni mapi, lahko trenutno pot pridobite avtomatično. V Powe
 
     docker run -it --rm -p 8888:8888 -v ${pwd}:/home/jovyan/work jupyter/minimal-notebook
 
+Če se želimo z ukazno vrstico povezati, moramo najprej ugotoviti ID instance:
+
+    $ docker ps
+    CONTAINER ID        IMAGE                      COMMAND                  CREATED              STATUS              PORTS                    NAMES
+    4d6a546ca880        jupyter/minimal-notebook   "tini -- start-noteb…"   About a minute ago   Up About a minute   0.0.0.0:8888->8888/tcp   eloquent_goodall
+
+Nato izvedemo ukaz, kjer podamo ID:
+
+    $ docker exec -i -t 4d6a546ca880 /bin/bash
+
+Zdaj se nahajamo v ukazni vrstici Linux.
+
+#### Pretvorba jupyter notebooka v navadno skripto python
+
+Če želimo zvezek (notebook) poganjati v ukazni vrstici, jo je potrebno najprej pretvoriti v navadno skripto Python:
+
+    $ jupyter nbconvert --to=python skripta.ipynb
+
+Nato jo lahko poženemo v ukazni vrstici:
+
+    $ python skripta.py
+
+
 ### Povezave za vajo in poglabljanje
 
 - [Zbirka nalog](https://ucilnica.fri.uni-lj.si/mod/resource/view.php?id=7614). Po prvih predavanjih so primerne naloge iz prvih dveh poglavij. Po drugih bodo vse do rekurzije; s to se ne bomo ukvarjali, ker je ne boste potrebovali.
