@@ -56,6 +56,7 @@ Nato izvedemo ukaz, kjer podamo ID:
 
 Zdaj se nahajamo v ukazni vrstici Linux.
 
+
 #### Pretvorba jupyter notebooka v navadno skripto python
 
 Če želimo zvezek (notebook) poganjati v ukazni vrstici, jo je potrebno najprej pretvoriti v navadno skripto Python:
@@ -66,6 +67,16 @@ Nato jo lahko poženemo v ukazni vrstici:
 
     $ python skripta.py
 
+### Namestitev biopython
+
+Modul [biopython](http://biopython.org/wiki/Download) namestimo v anacondi z ukazom. Še prej je potrebno namestiti nekaj dodatnih modulov:
+
+    conda install cycler
+    conda install matplotlib
+    conda install reportlab
+    conda install biopython
+
+V primeru težav lahko za 64 bitno verzijo Pythona namestite modul tako, da sledite navodilom [na strani](http://www.lfd.uci.edu/%7Egohlke/pythonlibs/) in namestite paket, recimo [paket](https://download.lfd.uci.edu/pythonlibs/t5yhk4lc/biopython-1.71-cp36-cp36m-win_amd64.whl)
 
 ### Povezave za vajo in poglabljanje
 
