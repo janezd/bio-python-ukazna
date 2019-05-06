@@ -2,28 +2,27 @@
 
 ### Predviden urnik
 
-
-**Osnove Pythona, delo z datotekami** (ponedeljek, 7. maj, 2018)
+**Osnove Pythona, delo z datotekami** (torek, 7. maj, 2019)
 
 - Jupyter notebook in markdown
 - Osnove Pythona: izrazi, pogoji, zanke
 - Branje in pisanje datotek
 
 
-**Podatkovne strukture in moduli v Pythonu** (torek, 8. maj, 2018)
+**Podatkovne strukture in moduli v Pythonu** (sreda, 8. maj, 2019)
 
 - Podatkovne strukture: objekt, slovar, množica
 - Definiranje funkcij
 
 
-**Uporaba ukazne vrstice Linux** (ponedeljek, 14. maj, 2018)
+**Uporaba ukazne vrstice Linux** (ponedeljek, 13. maj, 2019)
 
 - Osnove datotečne strukture
 - Poganjanja programov
 - Preusmerjanja vhoda in izhoda ter gradnja procesnih cevovodov
 
 
-**Procesiranje bioloških podatkov v Pythonu** (sreda, 16. maj, 2018)
+**Procesiranje bioloških podatkov v Pythonu** (sreda, 15. maj, 2019)
 
 - Priprava datotek FASTA, FASTQ, …
 - Uporaba modulov v Pythonu
@@ -31,9 +30,18 @@
 - Osnovne analize zaporedij v Biopython
 
 
+### Poganjanje preko spleta
 
-### Poganjanje Jupyter z uporabo Docker
+Okolje lahko poženete v spletni storitvi *mybinder.org*:
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/janezd/bio-python-ukazna/master) - osnovna uporaba
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/janezd/bio-python-ukazna/master?urlpath=lab) - dostop do ukazne vrstice Linux (terminal)
+
+Vse spremembe datotek bodo izgubljene, ko poteče seja (to je, največ 12 ur, oziroma največ 10 minut, ko zaprete še zadnje okno v brskalniku  z *mybinder.org*). Datoteko lahko prenesete na računalnik tako, da izberete menu "File -> Download as -> Notebook (.ipynb)." Drugi način je, da v oknu "Home" izberete eno datoteko in nato pritisnete gumb "Download." Možno je tudi naložiti datoteke na spletni strežnik (v oknu "Home", gumb "Upload").
+
+
+### Namestitev okolja na osebni računalnik
 
 Jupyter lahko poženemo z uporabo programa Docker. V spodnjem besedilu del '/pot/do/skript/na/disku' nadomestite s pravo potjo:
 
@@ -67,16 +75,18 @@ Nato jo lahko poženemo v ukazni vrstici:
 
     $ python skripta.py
 
+
 ### Namestitev biopython
 
-Modul [biopython](http://biopython.org/wiki/Download) namestimo v anacondi z ukazom. Še prej je potrebno namestiti nekaj dodatnih modulov:
+Modul [biopython](http://biopython.org/wiki/Download) namestimo v anacondi. Še prej je potrebno namestiti nekaj dodatnih modulov:
 
     conda install cycler
     conda install matplotlib
     conda install reportlab
     conda install biopython
 
-V primeru težav lahko za 64 bitno verzijo Pythona namestite modul tako, da sledite navodilom [na strani](http://www.lfd.uci.edu/%7Egohlke/pythonlibs/) in namestite paket, recimo [paket](https://download.lfd.uci.edu/pythonlibs/t5yhk4lc/biopython-1.71-cp36-cp36m-win_amd64.whl)
+V primeru težav lahko za 64 bitno verzijo Pythona namestite modul tako, da sledite navodilom [na strani](http://www.lfd.uci.edu/%7Egohlke/pythonlibs/) in namestite paket, recimo *biopython‑1.73‑cp37‑cp37m‑win32.whl*.
+
 
 ### Povezave za vajo in poglabljanje
 

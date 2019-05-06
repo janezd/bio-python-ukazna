@@ -1,0 +1,4 @@
+matplotlib
+cycler
+reportlab
+biopython
