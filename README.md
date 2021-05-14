@@ -1,4 +1,4 @@
-# Zapiski delavnice "Programiranje v Pythonu in uporaba ukazne vrstice"
+# Zapiski delavnice "Programiranje v Pythonu (in uporaba ukazne vrstice)"
 
 ### Predviden urnik
 
@@ -15,6 +15,8 @@
 - Definiranje funkcij
 
 
+### Ostale teme
+
 **Uporaba ukazne vrstice Linux**
 
 - Osnove datotečne strukture
@@ -30,7 +32,7 @@
 - Osnovne analize zaporedij v Biopython
 
 
-### Poganjanje preko spleta
+## Programersko okolje
 
 Okolje lahko poženete v spletni storitvi *mybinder.org*:
 
@@ -88,7 +90,7 @@ Modul [biopython](http://biopython.org/wiki/Download) namestimo v anacondi. Še 
 V primeru težav lahko za 64 bitno verzijo Pythona namestite modul tako, da sledite navodilom [na strani](http://www.lfd.uci.edu/%7Egohlke/pythonlibs/) in namestite paket, recimo *biopython‑1.77‑cp37‑cp37m‑win32.whl*.
 
 
-### Povezave za vajo in poglabljanje
+## Povezave za vajo in poglabljanje
 
 - [Zbirka nalog](https://ucilnica.fri.uni-lj.si/mod/resource/view.php?id=7614). Po prvih predavanjih so primerne naloge iz prvih dveh poglavij. Po drugih bodo vse do rekurzije; s to se ne bomo ukvarjali, ker je ne boste potrebovali.
 
