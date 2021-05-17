@@ -42,6 +42,8 @@ Okolje lahko poženete v spletni storitvi *mybinder.org*:
 
 Vse spremembe datotek bodo izgubljene, ko poteče seja (to je, največ 12 ur, oziroma največ 10 minut, ko zaprete še zadnje okno v brskalniku  z *mybinder.org*). Datoteko lahko prenesete na računalnik tako, da izberete menu "File -> Download as -> Notebook (.ipynb)." Drugi način je, da v oknu "Home" izberete eno datoteko in nato pritisnete gumb "Download." Možno je tudi naložiti datoteke na spletni strežnik (v oknu "Home", gumb "Upload").
 
+Poganjati je možno tudi v Googlovem [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/janezd/bio-python-ukazna).
+
 
 ### Namestitev okolja na osebni računalnik
 
