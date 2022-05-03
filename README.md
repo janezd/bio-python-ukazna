@@ -72,8 +72,6 @@ Zdaj se nahajamo v ukazni vrstici Linux.
 
 ### Opcija 3: Namestitev Pythona in knjižnic na svoj računalnik
 
-#### Opcija 2: Conda
-
 Conda je program za nameščanje Pythona in dodatnih knjižnic zanj ter za ustvarjanje navideznih okolij. Pri tem predmetu ne potrebujemo Anaconde, temveč bo zadoščala Miniconda.
 
 Najprej sestavimo novo navidezno okolje (zamenjajte `ime` z imenom, ki vam bo kaj povedalo):
