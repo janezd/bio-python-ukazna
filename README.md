@@ -34,20 +34,22 @@
 
 ## Programersko okolje
 
+### Opcija 1: Spletno okolje
+
 Okolje lahko poženete v spletni storitvi *mybinder.org*:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/janezd/bio-python-ukazna/master) - osnovna uporaba
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/janezd/bio-python-ukazna/master?urlpath=lab) - dostop do ukazne vrstice Linux (terminal)
 
-Vse spremembe datotek bodo izgubljene, ko poteče seja (to je, največ 12 ur, oziroma največ 10 minut, ko zaprete še zadnje okno v brskalniku  z *mybinder.org*). Datoteko lahko prenesete na računalnik tako, da izberete menu "File -> Download as -> Notebook (.ipynb)." Drugi način je, da v oknu "Home" izberete eno datoteko in nato pritisnete gumb "Download." Možno je tudi naložiti datoteke na spletni strežnik (v oknu "Home", gumb "Upload").
+**Vse spremembe datotek bodo izgubljene, ko poteče seja** (to je, največ 12 ur, oziroma največ 10 minut, ko zaprete še zadnje okno v brskalniku  z *mybinder.org*). Datoteko lahko prenesete na računalnik tako, da izberete menu "File -> Download as -> Notebook (.ipynb)." Drugi način je, da v oknu "Home" izberete eno datoteko in nato pritisnete gumb "Download." Možno je tudi naložiti datoteke na spletni strežnik (v oknu "Home", gumb "Upload").
 
 Poganjati je možno tudi v Googlovem [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/janezd/bio-python-ukazna).
 
 
-### Namestitev okolja na osebni računalnik
+### Opcija 2: Namestitev okolja Docker na osebni računalnik
 
-Jupyter lahko poženemo z uporabo programa Docker. V spodnjem besedilu del '/pot/do/skript/na/disku' nadomestite s pravo potjo:
+Jupyter lahko poženemo z uporabo programa Docker. Najprej namestimo program `docker`. Nato v ukazni vrstici poženemo naslednje ('/pot/do/skript/na/disku' nadomestite s pravo potjo):
 
     docker run -it --rm -p 8888:8888 -v /pot/do/skript/na/disku:/home/jovyan/work jupyter/minimal-notebook
 
@@ -67,6 +69,37 @@ Nato izvedemo ukaz, kjer podamo ID:
     $ docker exec -i -t 4d6a546ca880 /bin/bash
 
 Zdaj se nahajamo v ukazni vrstici Linux.
+
+### Opcija 3: Namestitev Pythona in knjižnic na svoj računalnik
+
+#### Opcija 2: Conda
+
+Conda je program za nameščanje Pythona in dodatnih knjižnic zanj ter za ustvarjanje navideznih okolij. Pri tem predmetu ne potrebujemo Anaconde, temveč bo zadoščala Miniconda.
+
+Najprej sestavimo novo navidezno okolje (zamenjajte `ime` z imenom, ki vam bo kaj povedalo):
+
+```
+conda create -n ime
+```
+
+(Na MS Windows utegnete imeti težave s šumniki v imenih poti -- conda bo slabo delovala, če bo postavljala okolje v mapo `c:\Users\ŠtefanČiželj\miniconda\envs\prog`. V primeru težav poskusite `conda create -p c:\mojiProgrami\ime` ali kaj takega, pri čemer prej naredite mapo c:\mojiProgrami).
+
+Nato aktiviramo novo okolje s `conda activate ime` (ali `conda activate c:\mojiProgrami\ime`, če ste Štefan Čiželj).
+
+Potem namestimo v to okolje python in vse drugo, kar bi še potrebovali.
+
+```
+conda install python jupyter
+```
+
+Kasneje lahko dodajamo nove stvari; primeri so spodaj.
+
+Za naslednja poganjanja moramo odpreti ukazni pozivnik (npr. Anaconda prompt na Windows) in napisati
+
+```
+conda activate ime
+jupyter notebook
+```
 
 
 #### Pretvorba jupyter notebooka v navadno skripto python
