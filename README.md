@@ -2,14 +2,14 @@
 
 ### Predviden urnik
 
-**Osnove Pythona, delo z datotekami** (ponedeljek, 17. maj, 2021)
+**Osnove Pythona, delo z datotekami** (torek, 3. maj, 2022)
 
 - Jupyter notebook in markdown
 - Osnove Pythona: izrazi, pogoji, zanke
 - Branje in pisanje datotek
 
 
-**Podatkovne strukture in moduli v Pythonu** (torek, 18. maj, 2021)
+**Podatkovne strukture in moduli v Pythonu** (torek, 10. maj, 2022)
 
 - Podatkovne strukture: objekt, slovar, množica
 - Definiranje funkcij
@@ -17,14 +17,14 @@
 
 ### Ostale teme
 
-**Uporaba ukazne vrstice Linux**
+**Uporaba ukazne vrstice Linux** (ponedeljek, 16. maj)
 
 - Osnove datotečne strukture
 - Poganjanja programov
 - Preusmerjanja vhoda in izhoda ter gradnja procesnih cevovodov
 
 
-**Procesiranje bioloških podatkov v Pythonu**
+**Procesiranje bioloških podatkov v Pythonu** (torek, 17. maj)
 
 - Priprava datotek FASTA, FASTQ, …
 - Uporaba modulov v Pythonu
