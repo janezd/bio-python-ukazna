@@ -17,19 +17,19 @@
 
 ### Ostale teme
 
-**Uporaba ukazne vrstice Linux** (ponedeljek, 16. maj)
-
-- Osnove datotečne strukture
-- Poganjanja programov
-- Preusmerjanja vhoda in izhoda ter gradnja procesnih cevovodov
-
-
-**Procesiranje bioloških podatkov v Pythonu** (torek, 17. maj)
+**Procesiranje bioloških podatkov v Pythonu** (ponedeljek, 16. maj)
 
 - Priprava datotek FASTA, FASTQ, …
 - Uporaba modulov v Pythonu
 - Branje, procesiranje in zapisovanje datotek v Biopython
 - Osnovne analize zaporedij v Biopython
+
+
+**Uporaba ukazne vrstice Linux** (torek, 17. maj)
+
+- Osnove datotečne strukture
+- Poganjanja programov
+- Preusmerjanja vhoda in izhoda ter gradnja procesnih cevovodov
 
 
 ## Programersko okolje
@@ -38,7 +38,9 @@
 
 Okolje lahko poženete v spletni storitvi *mybinder.org*:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/janezd/bio-python-ukazna/master) - osnovna uporaba
+https://mybinder.org/v2/gh/janezd/bio-python-ukazna/HEAD?urlpath=/tree/
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/janezd/bio-python-ukazna/HEAD?urlpath=/tree/) - osnovna uporaba
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/janezd/bio-python-ukazna/master?urlpath=lab) - dostop do ukazne vrstice Linux (terminal)
 
@@ -113,14 +115,14 @@ Nato jo lahko poženemo v ukazni vrstici:
 
 ### Namestitev biopython
 
-Modul [biopython](http://biopython.org/wiki/Download) namestimo v anacondi. Še prej je potrebno namestiti nekaj dodatnih modulov:
+Modul [biopython](http://biopython.org/wiki/Download) namestimo v anacondi. Še prej moramo namestiti nekaj dodatnih modulov:
 
     conda install cycler
     conda install matplotlib
     conda install reportlab
     conda install biopython
 
-V primeru težav lahko za 64 bitno verzijo Pythona namestite modul tako, da sledite navodilom [na strani](http://www.lfd.uci.edu/%7Egohlke/pythonlibs/) in namestite paket, recimo *biopython‑1.77‑cp37‑cp37m‑win32.whl*.
+V primeru težav lahko za 64 bitno verzijo Pythona namestite modul tako, da sledite navodilom [na strani](http://www.lfd.uci.edu/%7Egohlke/pythonlibs/) in namestite paket, recimo *biopython‑1.79‑cp39‑cp39‑win32.whl*.
 
 
 ## Povezave za vajo in poglabljanje
