@@ -38,8 +38,6 @@
 
 Okolje lahko poženete v spletni storitvi *mybinder.org*:
 
-https://mybinder.org/v2/gh/janezd/bio-python-ukazna/HEAD?urlpath=/tree/
-
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/janezd/bio-python-ukazna/HEAD?urlpath=/tree/) - osnovna uporaba
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/janezd/bio-python-ukazna/master?urlpath=lab) - dostop do ukazne vrstice Linux (terminal)
