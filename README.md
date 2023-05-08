@@ -2,14 +2,14 @@
 
 ### Predviden urnik
 
-**Osnove Pythona, delo z datotekami** (torek, 3. maj, 2022)
+**Osnove Pythona, delo z datotekami** (ponedeljek, 8. maj 2023)
 
 - Jupyter notebook in markdown
 - Osnove Pythona: izrazi, pogoji, zanke
 - Branje in pisanje datotek
 
 
-**Podatkovne strukture in moduli v Pythonu** (torek, 10. maj, 2022)
+**Podatkovne strukture in moduli v Pythonu** (torek, 9. maj, 2023)
 
 - Podatkovne strukture: objekt, slovar, množica
 - Definiranje funkcij
@@ -17,7 +17,7 @@
 
 ### Ostale teme
 
-**Procesiranje bioloških podatkov v Pythonu** (ponedeljek, 16. maj)
+**Procesiranje bioloških podatkov v Pythonu** (ponedeljek, 15. maj)
 
 - Priprava datotek FASTA, FASTQ, …
 - Uporaba modulov v Pythonu
@@ -25,7 +25,7 @@
 - Osnovne analize zaporedij v Biopython
 
 
-**Uporaba ukazne vrstice Linux** (torek, 17. maj)
+**Uporaba ukazne vrstice Linux** (torek, 16. maj)
 
 - Osnove datotečne strukture
 - Poganjanja programov
@@ -34,47 +34,16 @@
 
 ## Programersko okolje
 
-### Opcija 1: Spletno okolje
 
-Okolje lahko poženete v spletni storitvi *mybinder.org*:
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/janezd/bio-python-ukazna/HEAD?urlpath=/tree/) - osnovna uporaba
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/janezd/bio-python-ukazna/master?urlpath=lab) - dostop do ukazne vrstice Linux (terminal)
-
-**Vse spremembe datotek bodo izgubljene, ko poteče seja** (to je, največ 12 ur, oziroma največ 10 minut, ko zaprete še zadnje okno v brskalniku  z *mybinder.org*). Datoteko lahko prenesete na računalnik tako, da izberete menu "File -> Download as -> Notebook (.ipynb)." Drugi način je, da v oknu "Home" izberete eno datoteko in nato pritisnete gumb "Download." Možno je tudi naložiti datoteke na spletni strežnik (v oknu "Home", gumb "Upload").
-
-Poganjati je možno tudi v Googlovem [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/janezd/bio-python-ukazna).
-
-
-### Opcija 2: Namestitev okolja Docker na osebni računalnik
-
-Jupyter lahko poženemo z uporabo programa Docker. Najprej namestimo program `docker`. Nato v ukazni vrstici poženemo naslednje ('/pot/do/skript/na/disku' nadomestite s pravo potjo):
-
-    docker run -it --rm -p 8888:8888 -v /pot/do/skript/na/disku:/home/jovyan/work jupyter/minimal-notebook
-
-Za uporabnike Windows: Navodila najdete na [povezavi](https://docs.docker.com/docker-for-windows/). V primeru,
-da se nahajate v delovni mapi, lahko trenutno pot pridobite avtomatično. V PowerShell poženite:
-
-    docker run -it --rm -p 8888:8888 -v ${pwd}:/home/jovyan/work jupyter/minimal-notebook
-
-Če se želimo z ukazno vrstico povezati, moramo najprej ugotoviti ID instance:
-
-    $ docker ps
-    CONTAINER ID        IMAGE                      COMMAND                  CREATED              STATUS              PORTS                    NAMES
-    4d6a546ca880        jupyter/minimal-notebook   "tini -- start-noteb…"   About a minute ago   Up About a minute   0.0.0.0:8888->8888/tcp   eloquent_goodall
-
-Nato izvedemo ukaz, kjer podamo ID:
-
-    $ docker exec -i -t 4d6a546ca880 /bin/bash
-
-Zdaj se nahajamo v ukazni vrstici Linux.
-
-### Opcija 3: Namestitev Pythona in knjižnic na svoj računalnik
+### Opcija 1: Namestitev Pythona in knjižnic na svoj računalnik
 
 Conda je program za nameščanje Pythona in dodatnih knjižnic zanj ter za ustvarjanje navideznih okolij. Pri tem predmetu ne potrebujemo Anaconde, temveč bo zadoščala Miniconda.
 
-Najprej sestavimo novo navidezno okolje (zamenjajte `ime` z imenom, ki vam bo kaj povedalo):
+Najprej namestimo [minicondo](https://docs.conda.io/en/latest/miniconda.html).
+
+Odpremo ukazno vrstico (shell, term, cmd, v Windows pa vam bo za tole najboljše služil Anaconda Prompt).
+
+Sestavimo novo navidezno okolje (zamenjajte `ime` z imenom, ki vam bo kaj povedalo):
 
 ```
 conda create -n ime
@@ -100,7 +69,42 @@ jupyter notebook
 ```
 
 
-#### Pretvorba jupyter notebooka v navadno skripto python
+### Opcija 2: Namestitev okolja Docker na osebni računalnik
+
+Jupyter lahko poženemo z uporabo programa Docker. Najprej namestimo program `docker`. Nato v ukazni vrstici poženemo naslednje ('/pot/do/skript/na/disku' nadomestite s pravo potjo):
+
+    docker run -it --rm -p 8888:8888 -v /pot/do/skript/na/disku:/home/jovyan/work jupyter/minimal-notebook
+
+Za uporabnike Windows: Navodila najdete na [povezavi](https://docs.docker.com/docker-for-windows/). V primeru,
+da se nahajate v delovni mapi, lahko trenutno pot pridobite avtomatično. V PowerShell poženite:
+
+    docker run -it --rm -p 8888:8888 -v ${pwd}:/home/jovyan/work jupyter/minimal-notebook
+
+Če se želimo z ukazno vrstico povezati, moramo najprej ugotoviti ID instance:
+
+    $ docker ps
+    CONTAINER ID        IMAGE                      COMMAND                  CREATED              STATUS              PORTS                    NAMES
+    4d6a546ca880        jupyter/minimal-notebook   "tini -- start-noteb…"   About a minute ago   Up About a minute   0.0.0.0:8888->8888/tcp   eloquent_goodall
+
+Nato izvedemo ukaz, kjer podamo ID:
+
+    $ docker exec -i -t 4d6a546ca880 /bin/bash
+
+Zdaj se nahajamo v ukazni vrstici Linux.
+
+### Opcija 3: Spletno okolje
+
+Okolje lahko poženete v spletni storitvi *mybinder.org*:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/janezd/bio-python-ukazna/HEAD?urlpath=/tree/) - osnovna uporaba
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/janezd/bio-python-ukazna/master?urlpath=lab) - dostop do ukazne vrstice Linux (terminal)
+
+**Vse spremembe datotek bodo izgubljene, ko poteče seja** (to je, največ 12 ur, oziroma največ 10 minut, ko zaprete še zadnje okno v brskalniku  z *mybinder.org*). Datoteko lahko prenesete na računalnik tako, da izberete menu "File -> Download as -> Notebook (.ipynb)." Drugi način je, da v oknu "Home" izberete eno datoteko in nato pritisnete gumb "Download." Možno je tudi naložiti datoteke na spletni strežnik (v oknu "Home", gumb "Upload").
+
+Poganjati je možno tudi v Googlovem [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/janezd/bio-python-ukazna).
+
+### Pretvorba jupyter notebooka v navadno skripto python
 
 Če želimo zvezek (notebook) poganjati v ukazni vrstici, jo je potrebno najprej pretvoriti v navadno skripto Python:
 
@@ -125,7 +129,7 @@ V primeru težav lahko za 64 bitno verzijo Pythona namestite modul tako, da sled
 
 ## Povezave za vajo in poglabljanje
 
-- [Zbirka nalog](https://ucilnica.fri.uni-lj.si/mod/resource/view.php?id=7614). Po prvih predavanjih so primerne naloge iz prvih dveh poglavij. Po drugih bodo vse do rekurzije; s to se ne bomo ukvarjali, ker je ne boste potrebovali.
+- [Zbirka nalog](https://ucilnica.fri.uni-lj.si/mod/resource/view.php?id=7614) (vstopite lahko kot gost). Po prvih predavanjih so primerne naloge iz prvih dveh poglavij. Po drugih bodo vse do rekurzije; s to se ne bomo ukvarjali, ker je ne boste potrebovali.
 
 - [Stran predmeta Programiranje 1 na FRI](https://ucilnica.fri.uni-lj.si/course/view.php?id=166). Na njej so obširnejši zapiski od teh tule (čeprav so, kot boste videli, v žlahti), predvsem pa so tam kupi in kupi nalog. Nekatere so v zbirki, veliko pa je dodatnih.
 
