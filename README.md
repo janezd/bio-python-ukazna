@@ -17,7 +17,7 @@
 
 ### Ostale teme
 
-**Procesiranje bioloških podatkov v Pythonu** (torek, 14. maj 2024 ob 16.00)
+**Procesiranje bioloških podatkov v Pythonu** (ponedeljek, 13. maj 2024 ob 15.15)
 
 - Priprava datotek FASTA, FASTQ, …
 - Uporaba modulov v Pythonu
@@ -25,7 +25,7 @@
 - Osnovne analize zaporedij v Biopython
 
 
-**Uporaba ukazne vrstice Linux** (???)
+**Uporaba ukazne vrstice Linux** (torek, 14. maj 2024 ob 16.00)
 
 - Osnove datotečne strukture
 - Poganjanja programov
