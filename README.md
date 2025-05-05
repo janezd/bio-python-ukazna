@@ -40,7 +40,7 @@
 Conda je program za nameščanje Pythona in dodatnih knjižnic zanj ter za ustvarjanje navideznih okolij. Pri tem predmetu ne potrebujemo Anaconde, temveč bo zadoščala Miniconda oz. Miniforge. 
 
 - Če že imate karkoli od gornjega, je OK. Sicer pa najprej namestimo [Miniforge](https://conda-forge.org/download/). 
-- Nato odpremo ukazno vrstico (shell, term, cmd, v Windows pa vam bo za tole najboljše služil Anaconda Prompt).
+- Nato odpremo ukazno vrstico (shell, term, cmd, v Windows pa vam bo za tole najboljše služil Anaconda Prompt oz. Miniforge Prompt).
 - Sestavimo novo navidezno okolje (zamenjajte `ime` z imenom, ki vam bo kaj povedalo):
 
     ```
