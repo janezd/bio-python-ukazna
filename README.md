@@ -2,14 +2,14 @@
 
 ### Predviden urnik
 
-**Osnove Pythona, delo z datotekami** (ponedeljek, 6. maj 2024 ob 15.15)
+**Osnove Pythona, delo z datotekami** (ponedeljek, 5. maj 2025 ob 16.00)
 
 - Jupyter notebook in markdown
 - Osnove Pythona: izrazi, pogoji, zanke
 - Branje in pisanje datotek
 
 
-**Podatkovne strukture in moduli v Pythonu** (torek, 7. maj, 2024 ob 16.00)
+**Podatkovne strukture in moduli v Pythonu** (torek, 6. maj, 2025 ob 17.00)
 
 - Podatkovne strukture: objekt, slovar, množica
 - Definiranje funkcij
@@ -17,7 +17,7 @@
 
 ### Ostale teme
 
-**Procesiranje bioloških podatkov v Pythonu** (ponedeljek, 13. maj 2024 ob 15.15)
+**Procesiranje bioloških podatkov v Pythonu** (ponedeljek, 12. maj 2025 ob 16.00)
 
 - Priprava datotek FASTA, FASTQ, …
 - Uporaba modulov v Pythonu
@@ -25,7 +25,7 @@
 - Osnovne analize zaporedij v Biopython
 
 
-**Uporaba ukazne vrstice Linux** (torek, 14. maj 2024 ob 16.00)
+**Uporaba ukazne vrstice Linux** (torek, 13. maj 2025 ob 17.00)
 
 - Osnove datotečne strukture
 - Poganjanja programov
@@ -37,36 +37,34 @@
 
 ### Opcija 1: Namestitev Pythona in knjižnic na svoj računalnik
 
-Conda je program za nameščanje Pythona in dodatnih knjižnic zanj ter za ustvarjanje navideznih okolij. Pri tem predmetu ne potrebujemo Anaconde, temveč bo zadoščala Miniconda.
+Conda je program za nameščanje Pythona in dodatnih knjižnic zanj ter za ustvarjanje navideznih okolij. Pri tem predmetu ne potrebujemo Anaconde, temveč bo zadoščala Miniconda oz. Miniforge. 
 
-Najprej namestimo [minicondo](https://docs.conda.io/en/latest/miniconda.html).
+- Če že imate karkoli od gornjega, je OK. Sicer pa najprej namestimo [Miniforge](https://conda-forge.org/download/). 
+- Nato odpremo ukazno vrstico (shell, term, cmd, v Windows pa vam bo za tole najboljše služil Anaconda Prompt).
+- Sestavimo novo navidezno okolje (zamenjajte `ime` z imenom, ki vam bo kaj povedalo):
 
-Odpremo ukazno vrstico (shell, term, cmd, v Windows pa vam bo za tole najboljše služil Anaconda Prompt).
+    ```
+    conda create -n ime
+    ```
 
-Sestavimo novo navidezno okolje (zamenjajte `ime` z imenom, ki vam bo kaj povedalo):
+    (Na MS Windows utegnete imeti težave s šumniki v imenih poti -- conda bo slabo delovala, če bo postavljala okolje v mapo `c:\Users\ŠtefanČiželj\miniconda\envs\prog`. V primeru težav poskusite `conda create -p c:\mojiProgrami\ime` ali kaj takega, pri čemer prej naredite mapo c:\mojiProgrami).
 
-```
-conda create -n ime
-```
+- Nato aktiviramo novo okolje s `conda activate ime` (ali `conda activate c:\mojiProgrami\ime`, če ste Štefan Čiželj).
 
-(Na MS Windows utegnete imeti težave s šumniki v imenih poti -- conda bo slabo delovala, če bo postavljala okolje v mapo `c:\Users\ŠtefanČiželj\miniconda\envs\prog`. V primeru težav poskusite `conda create -p c:\mojiProgrami\ime` ali kaj takega, pri čemer prej naredite mapo c:\mojiProgrami).
+- Potem namestimo v to okolje python in vse drugo, kar bi še potrebovali.
 
-Nato aktiviramo novo okolje s `conda activate ime` (ali `conda activate c:\mojiProgrami\ime`, če ste Štefan Čiželj).
+    ```
+    conda install python jupyter
+    ```
 
-Potem namestimo v to okolje python in vse drugo, kar bi še potrebovali.
+    Kasneje lahko dodajamo nove stvari; primeri so spodaj.
 
-```
-conda install python jupyter
-```
+- Za naslednja poganjanja moramo odpreti ukazni pozivnik (npr. Anaconda prompt na Windows) in napisati
 
-Kasneje lahko dodajamo nove stvari; primeri so spodaj.
-
-Za naslednja poganjanja moramo odpreti ukazni pozivnik (npr. Anaconda prompt na Windows) in napisati
-
-```
-conda activate ime
-jupyter notebook
-```
+    ```
+    conda activate ime
+    jupyter notebook
+    ```
 
 
 ### Opcija 2: Namestitev okolja Docker na osebni računalnik
