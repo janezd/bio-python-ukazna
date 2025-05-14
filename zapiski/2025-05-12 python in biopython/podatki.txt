@@ -1,0 +1,4 @@
+Ana      56  158
+Berta    62  164
+Cilka    78  185
+Dani     67  160
