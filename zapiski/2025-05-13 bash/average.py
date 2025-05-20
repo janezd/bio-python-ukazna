@@ -3,8 +3,9 @@ cn = 0
 s = 0
 with open('teze.txt') as f:
     for line in f:
-        print(line.strip())
-        s += int(line.strip())
+        v = line.strip()
+        print(v)
+        s += int(v)
         cn += 1
 print("sum:", s)
 print("n:", cn)
