@@ -2,14 +2,14 @@
 
 ### Predviden urnik
 
-**Osnove Pythona, delo z datotekami** (ponedeljek, 5. maj 2025 ob 16.00)
+**Osnove Pythona, delo z datotekami** (ponedeljek, 4. maj 2026 ob 16.00)
 
 - Jupyter notebook in markdown
 - Osnove Pythona: izrazi, pogoji, zanke
 - Branje in pisanje datotek
 
 
-**Podatkovne strukture in moduli v Pythonu** (torek, 6. maj, 2025 ob 17.00)
+**Podatkovne strukture in moduli v Pythonu** (torek, 5. maj, 2026 ob 16.00)
 
 - Podatkovne strukture: objekt, slovar, množica
 - Definiranje funkcij
@@ -17,7 +17,7 @@
 
 ### Ostale teme
 
-**Procesiranje bioloških podatkov v Pythonu** (ponedeljek, 12. maj 2025 ob 16.00)
+**Procesiranje bioloških podatkov v Pythonu** (ponedeljek, 11. maj 2026 ob 16.00)
 
 - Priprava datotek FASTA, FASTQ, …
 - Uporaba modulov v Pythonu
@@ -25,7 +25,7 @@
 - Osnovne analize zaporedij v Biopython
 
 
-**Uporaba ukazne vrstice Linux** (torek, 13. maj 2025 ob 17.00)
+**Uporaba ukazne vrstice Linux** (torek, 12. maj 2026 ob 16.00)
 
 - Osnove datotečne strukture
 - Poganjanja programov
