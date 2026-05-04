@@ -49,7 +49,13 @@ Conda je program za nameščanje Pythona in dodatnih knjižnic zanj ter za ustva
 
     (Na MS Windows utegnete imeti težave s šumniki v imenih poti -- conda bo slabo delovala, če bo postavljala okolje v mapo `c:\Users\ŠtefanČiželj\miniconda\envs\prog`. V primeru težav poskusite `conda create -p c:\mojiProgrami\ime` ali kaj takega, pri čemer prej naredite mapo c:\mojiProgrami).
 
-- Nato aktiviramo novo okolje s `conda activate ime` (ali `conda activate c:\mojiProgrami\ime`, če ste Štefan Čiželj).
+- Nato aktiviramo novo okolje s
+
+    ```
+    conda activate ime
+    ```
+
+    (ali `conda activate c:\mojiProgrami\ime`, če ste Štefan Čiželj).
 
 - Potem namestimo v to okolje python in vse drugo, kar bi še potrebovali.
 
@@ -59,10 +65,24 @@ Conda je program za nameščanje Pythona in dodatnih knjižnic zanj ter za ustva
 
     Kasneje lahko dodajamo nove stvari; primeri so spodaj.
 
-- Za naslednja poganjanja moramo odpreti ukazni pozivnik (npr. Anaconda prompt na Windows) in napisati
+- Po tem lahko poženemo
+
+    ```
+    jupyter notebook
+    ```
+
+Ko želimo naslednjič uporabljati tu nameščeni Python in druge knjižnice (za zdaj Jupyter notebook), moramo
+
+- odpreti ukazni pozivnik (npr. Anaconda prompt na Windows) in
+- aktivirati okolje
 
     ```
     conda activate ime
+    ```
+
+- pognati (recimo) jupyter notebook
+ 
+    ```
     jupyter notebook
     ```
 
